@@ -7,41 +7,41 @@
 </head>
 <body>
     <nav class="navbar">
-        <span>Meta Parking</span>
+        <img src="https://www.metacube.com/assets/images/logo.svg" alt="metacube logo">
         <a href="#add-employee">Add Employee</a>
         <a href="#add-vehicle">Add Vehicle</a>
         <a href="#feedback">Give Feedback</a>
         <a href="#pricing">Pricing</a>
     </nav>
-    <img  class="landing-image" src="https://cdn.pixabay.com/photo/2019/08/01/07/26/architecture-4376923_1280.jpg">
+    <img  class="landing-image" src="https://cdn.pixabay.com/photo/2019/08/01/07/26/architecture-4376923_1280.jpg" alt="cover image">
     <!-- <img  class="landing-image" src="https://cdn.pixabay.com/photo/2020/10/02/06/54/cars-5620379_1280.jpg"> -->
     <section id="add-employee">
         <h2>Add Employee Form</h2>
         <form>
-            <input type="text" placeholder="Full Name" /> <br/>
+            <input type="text" placeholder="Full Name" required /> <br/>
             <label>Gender</label>
-            <input type="radio" />Male
-            <input type="radio" />Female <br/>
-            <input type="email" placeholder="Email"/> <br/>
-            <input type="password" placeholder="Password" /> <br/>
-            <input type="password" placeholder="Confirm Password" /> <br/>
-            <input type="number" placeholder="Contact Number" /> <br/>
+            <input name="gender" type="radio" required />Male
+            <input name="gender" type="radio" required />Female <br/>
+            <input type="email" placeholder="Email" required/> <br/>
+            <input type="password" placeholder="Password" required /> <br/>
+            <input type="password" placeholder="Confirm Password" required /> <br/>
+            <input type="number" placeholder="Contact Number" pattern="[6-9]{1}[0-9]{9}" required /> <br/>
             <input type="submit" value="Add Employee"/>
         </form>
     </section>
     <section id="add-vehicle">
         <h2>Add Vehicle Form</h2>
         <form>
-            <input type="text" placeholder="Vehicle Make (Company)"/> <br/>
-            <input type="text" placeholder="Vehicle Model" /> <br/>
+            <input type="text" placeholder="Vehicle Make (Company)" required/> <br/>
+            <input type="text" placeholder="Vehicle Model" required /> <br/>
             <span>Vehicle Type</span>
-            <select>
+            <select required>
                 <option>Two wheeler</option>
                 <option>Four wheeler</option>
                 <option>Heavy vehicle</option>
             </select> <br/>
-            <input type="text" placeholder="Vehicle Number" /> <br/>
-            <input type="text" placeholder="Employee ID" /> <br/>
+            <input type="text" placeholder="Vehicle Number" required /> <br/>
+            <input type="text" placeholder="Employee ID" required /> <br/>
             <textarea placeholder="Identification (Color, mark,visible accessory etc.)"></textarea> <br/>
             <input type="submit" value="Add Vehicle"/>
         </form>
@@ -49,10 +49,10 @@
     <section id="feedback">
         <h2>Feedback Form</h2>
         <form>
-            <input type="text" placeholder="Full Name" /> <br/>
-            <input type="email" placeholder="Email" /> <br/>
-            <input type="text" placeholder="Subject" /> <br/>
-            <textarea placeholder="Message"></textarea> <br/>
+            <input type="text" placeholder="Full Name" required /> <br/>
+            <input type="email" placeholder="Email" required /> <br/>
+            <input type="text" placeholder="Subject" required /> <br/>
+            <textarea placeholder="Message" required ></textarea> <br/>
             <input type="submit" value="Send Feedback" />
         </form>
     </section>
