@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metaparking</title>
+</head>
+<body>
+    <nav class="navbar">
+        <span>Meta Parking</span>
+        <a href="#add-employee">Add Employee</a>
+        <a href="#add-vehicle">Add Vehicle</a>
+        <a href="#feedback">Give Feedback</a>
+        <a href="#pricing">Pricing</a>
+    </nav>
+    <img  class="landing-image" src="https://cdn.pixabay.com/photo/2019/08/01/07/26/architecture-4376923_1280.jpg">
+    <!-- <img  class="landing-image" src="https://cdn.pixabay.com/photo/2020/10/02/06/54/cars-5620379_1280.jpg"> -->
+    <div id="add-employee">
+        <h2>Add Employee Form</h2>
+        <form>
+            <input type="text" placeholder="Full Name" /> <br/>
+            <input type="radio" />Male
+            <input type="radio" />Female <br/>
+            <input type="email" placeholder="Email"/> <br/>
+            <input type="password" placeholder="Password" /> <br/>
+            <input type="password" placeholder="Confirm Password" /> <br/>
+            <input type="number" placeholder="Contact Number" /> <br/>
+            <input type="submit" value="Add Employee"/>
+        </form>
+    </div>
+    <div id="add-vehicle">
+        <h2>Add Vehicle Form</h2>
+        <form>
+            <input type="text" placeholder="Vehicle Make (Company)"/> <br/>
+            <input type="text" placeholder="Vehicle Model" /> <br/>
+            <span>Vehicle Type</span>
+            <select>
+                <option>Two wheeler</option>
+                <option>Four wheeler</option>
+                <option>Heavy vehicle</option>
+            </select> <br/>
+            <input type="text" placeholder="Vehicle Number" /> <br/>
+            <input type="text" placeholder="Employee ID" /> <br/>
+            <textarea placeholder="Identification (Color, mark,visible accessory etc.)"></textarea> <br/>
+            <input type="submit" value="Add Vehicle"/>
+        </form>
+    </div>
+    <div id="feedback">
+        <h2>Feedback Form</h2>
+        <form>
+            <input type="text" placeholder="Full Name" /> <br/>
+            <input type="email" placeholder="Email" /> <br/>
+            <input type="text" placeholder="Subject" /> <br/>
+            <textarea placeholder="Message"></textarea> <br/>
+            <input type="submit" value="Send Feedback" />
+        </form>
+    </div>
+    <div id="pricing">
+        <h2>Pricing</h2>
+        <div id="two-wheeler-pricing">
+            <span>Two Wheeler</span>
+            <div>
+                <span>Rs. 250</span>
+                <span>/month</span>
+            </div>
+            <div>Rs. 10 Daily</div>
+            <div>Rs. 250 Monthly</div>
+            <div>Rs. 2500 Yearly</div>
+            <input type="button" value="Purchase"/>
+        </div>
+        <div id="four-wheeler-pricing">
+            <span>Four Wheeler</span>
+            <div>
+                <span>Rs. 400</span>
+                <span>/month</span>
+            </div>
+            <div>Rs. 20 Daily</div>
+            <div>Rs. 400 Monthly</div>
+            <div>Rs. 4000 Yearly</div>
+            <input type="button" value="Purchase"/>
+        </div>
+        <div id="heavy-vehicle-pricing">
+            <span>Heavy Vehicle</span>
+            <div>
+                <span>Rs. 600</span>
+                <span>/month</span>
+            </div>
+            <div>Rs. 30 Daily</div>
+            <div>Rs. 600 Monthly</div>
+            <div>Rs. 6000 Yearly</div>
+            <input type="button" value="Purchase"/>
+        </div>
+    </div>
+</body>
+</html>
