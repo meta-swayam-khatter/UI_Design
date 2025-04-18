@@ -1,0 +1,195 @@
+* {
+    font-family:"Poppins",sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    font-weight: 600;
+    /* letter-spacing: 0.2px; */
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.navbar {
+    top: 0;
+    background-color: whitesmoke;
+    padding: 15px;
+    
+}
+
+.navitems {
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+    font-size: large;
+}
+
+.navitem {
+    padding: 10px;
+}
+
+.landing-page {
+    position: relative;
+    width: 100%;
+    height: 95vh;
+}
+
+.landing-image {
+    width: 100%;
+    height: 95vh;
+    
+    object-fit: cover;
+    position: absolute;
+    filter: blur(6px);
+}
+
+.temp {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    z-index: 5;
+    /* backdrop-filter: blur(4px); */
+    
+}
+
+
+.landing-title {
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 100%;
+    /* margin-top: 3%; */
+    z-index: 6;
+}
+
+.form-container {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.form-title {
+    font-size: large;
+}
+
+.form-content {
+    margin: 10px;
+    background-color: #d2dbf8;
+    display: flex;
+    border: 2px solid blue;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+form {
+    justify-items: center;
+    text-align: center;
+    width: 50%;
+}
+
+.animated {
+    width: 50%;
+    max-height: 400px;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* From Uiverse.io by tranquoclong */ 
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    width: 290px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+  .price-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 100px;
+    justify-content: space-between;
+}
+
+.price-card {
+    background-color: #d2dbf8;
+    border: 2px solid #9eb3f9;    
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 30%;
+}
+
+.price-circle {
+    border: 1px solid black;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    padding: 9px;
+    background-color: whitesmoke;
+}
+
+.price-card > span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.price-card > input {
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+}
