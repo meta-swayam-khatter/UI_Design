@@ -42,9 +42,9 @@
                         <input autocomplete="off" required="" type="text">
                         <label for="name">Full Name</label>
                     </div>
-                    <label for="Gender">Gender: </label>
-                    <input name="gender" type="radio" required />Male
-                    <input name="gender" type="radio" required />Female <br/>
+                    <label class="radio-label" for="Gender">Gender: </label>
+                    <input class="radio-option" name="gender" type="radio" required />Male
+                    <input class="radio-option" name="gender" type="radio" required />Female <br/>
                     <div class="inputGroup">
                         <input autocomplete="off" required="" type="email">
                         <label for="email">Email</label>
@@ -80,8 +80,8 @@
                         <input autocomplete="off" required="" type="text">
                         <label for="VehicleModel">Vehicle Model</label>
                     </div>
-                    <span>Vehicle Type: </span>
-                    <select required>
+                    <span class="select-label">Vehicle Type: </span>
+                    <select class="select-dropdown" required>
                         <option>Two wheeler</option>
                         <option>Four wheeler</option>
                         <option>Heavy vehicle</option>
@@ -136,10 +136,13 @@
                         <span>Rs. 250</span>
                         <span>/month</span>
                     </div>
+                    <hr style="width: 60%;">
                     <div class="pricing">
-                        <div>Rs. 10 Daily</div>
-                        <div>Rs. 250 Monthly</div>
-                        <div>Rs. 2500 Yearly</div>
+                        <ul>
+                            <li>Rs. 10 Daily</li>
+                            <li>Rs. 250 Monthly</li>
+                            <li>Rs. 2500 Yearly</li>
+                        </ul>
                     </div>
                     <input type="button" value="Purchase"/>
                 </div>
@@ -149,10 +152,13 @@
                         <span>Rs. 400</span>
                         <span>/month</span>
                     </div>
+                    <hr style="width: 60%;">
                     <div class="pricing">
-                        <div>Rs. 20 Daily</div>
-                        <div>Rs. 400 Monthly</div>
-                        <div>Rs. 4000 Yearly</div>
+                        <ul>
+                            <li>Rs. 20 Daily</li>
+                            <li>Rs. 400 Monthly</li>
+                            <li>Rs. 4000 Yearly</li>
+                        </ul>
                     </div>
                     <input type="button" value="Purchase"/>
                 </div>
@@ -162,15 +168,35 @@
                         <span>Rs. 600</span>
                         <span>/month</span>
                     </div>
+                    <hr style="width: 60%;">
                     <div class="pricing">
-                        <div>Rs. 30 Daily</div>
-                        <div>Rs. 600 Monthly</div>
-                        <div>Rs. 6000 Yearly</div>
+                        <ul>
+                            <li>Rs. 30 Daily</li>
+                            <li>Rs. 600 Monthly</li>
+                            <li>Rs. 6000 Yearly</li>
+                        </ul>
                     </div>
                     <input type="button" value="Purchase"/>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="sitemap">
+                <div>
+                    <span style="font-size: 30px;">meta</span>
+                    <span style="font-size: 30px; color: #4187f2;">park</span>
+                    <sub style="font-size: 15px;">ing</sub>
+                </div>
+                <div class="footer-nav">
+                    <a href="">Add employee</a>
+                    <a href="">Add vehicle</a>
+                    <a href="">Feedback</a>
+                    <a href="">Pricing</a>
+                </div>
+            </div>
+            <hr style="width: 80%;">
+            <div style="color: gray;">All Right Reserved</div>
+        </footer>
     </div>
 </body>
 </html>

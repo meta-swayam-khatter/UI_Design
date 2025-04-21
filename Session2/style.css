@@ -8,7 +8,7 @@
 a {
     text-decoration: none;
     font-weight: 600;
-    color: #4187f2;
+    color: #4f4f4f;
 }
 
 body {
@@ -56,6 +56,7 @@ body {
     padding-top: 40px;
     font-size: large;
     line-height: 25px;
+    text-align: justify;
 }
 
 .landing-quote {
@@ -103,6 +104,27 @@ form {
     border-radius: 20px;
     padding: 40px;
     box-shadow: 10px 10px 55px #9abcee;
+}
+
+.radio-label {
+    font-size: large;
+    font-weight: 600;
+}
+
+.radio-option {
+    padding: 5px;
+    font-size: medium;
+}
+
+.select-label {
+    font-size: large;
+    font-weight: 600;
+}
+
+.select-dropdown {
+    padding: 5px;
+    font-size: medium;
+    border-radius: 20px;
 }
 
 details > summary {
@@ -197,7 +219,7 @@ details > summary {
     border-radius: 20px;
     align-items: center;
     justify-items: center;
-    width: 30%;
+    width: 25%;
 }
 
 .price-circle {
@@ -232,6 +254,7 @@ details > summary {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 10px 0px;
 }
 
 .price-title {
@@ -240,4 +263,26 @@ details > summary {
     align-self: center;
     padding: 20px;
     color: rgb(49, 48, 48);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgba(231, 231, 231, 0.773);
+    border-top: 2px solid silver;
+}
+
+.sitemap {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+
 }
