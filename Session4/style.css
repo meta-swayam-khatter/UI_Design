@@ -1,0 +1,56 @@
+.playfair {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+}
+
+.custom-a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-weight: 600;
+}
+
+.bg-color-primary-dark {
+    background-color: #495057;
+}
+
+.bg-color-secondary {
+    background-color: #343a40;
+}
+
+.hero {
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.hero > .title {
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.hero > .text {
+    font-size: 20px;
+    font-weight: 100;
+    color: #fff;
+}
+
+.hero > .anchor {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.custom-card {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.tag {
+    font-size: large;
+    font-weight: bold;
+}
