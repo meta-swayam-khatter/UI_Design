@@ -1,0 +1,77 @@
+* {
+  scrollbar-width: thin;
+}
+
+.side-navbar .title {
+  font-size: x-large;
+  color: black;
+}
+
+.side-navbar .section-title {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.accordion-collapse .option {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.option {
+  font-weight: 500;
+}
+
+.header-left {
+  font-size: large;
+  font-weight: bold;
+}
+
+.header-right {
+  font-size: medium;
+  font-weight: 500;
+}
+
+.twitter-bg {
+  background-color: #40a4f1 !important;
+}
+
+.facebook-bg {
+  background-color: #5b6be8 !important;
+}
+
+.navbar-bg {
+  background-color: #5b6be8 !important;
+}
+
+.search-bg {
+  background-color: #6d7beb !important;
+}/*# sourceMappingURL=style.css.map */
+
+.message-box {
+  background-color: #EFF3FC;
+}
+
+.message-text {
+  font-size: xx-small;
+}
+
+.message-heading {
+  font-size: smaller;
+  font: 0.6em;
+}
+
+.message-img {
+    border-radius: 50%;
+}
+
+.bg-cart {
+  background-color: #40a4f1;
+}
+
+.bg-message {
+  background-color: seagreen;
+}
+
+.bg-martini {
+  background-color: rgb(255, 204, 0);
+}
