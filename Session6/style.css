@@ -1,0 +1,297 @@
+* {
+    font-family:"Poppins",sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.navbar {
+    top: 0;
+    background-color: whitesmoke;
+    padding: 15px;
+}
+
+.logo {
+    padding: 0px 20px;
+}
+
+.navitems {
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+    font-size: large;
+}
+
+.navitem {
+    padding: 10px;
+}
+
+.landing-page {
+    width: 100%;
+    height: 95vh;
+}
+
+.landing-content {
+    display: flex;
+}
+
+.landing-title {
+    text-align: center;
+    width: 40%;
+    height: 80%;
+    padding: 120px 60px;
+}
+
+.landing-text {
+    padding-top: 40px;
+    font-size: large;
+    line-height: 25px;
+    text-align: justify;
+}
+
+.landing-quote {
+    padding: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color: #4187f2;
+}
+
+.landing-image {
+    width: 60%;
+    object-fit: fit;
+}
+
+.landing-image > img {
+    border-radius: 60px 0px 0px 60px;
+    height: 80%;
+    width: 100%;
+}
+
+.form-container {
+    width: 100%;
+    margin: 5px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    height: 100%;
+}
+
+.form-title {
+    font-size: large;
+}
+
+.form-content {
+    background-color: whitesmoke;
+    display: flex;
+    border-radius: 20px;
+    padding: 120px 20px;
+    height: 100%;
+    justify-content: space-around;
+}
+
+form {
+    justify-items: center;
+    text-align: center;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 10px 10px 55px #9abcee;
+}
+
+.radio-label {
+    font-size: large;
+    font-weight: 600;
+}
+
+.radio-option {
+    padding: 5px;
+    font-size: medium;
+}
+
+.select-label {
+    font-size: large;
+    font-weight: 600;
+}
+
+.select-dropdown {
+    padding: 5px;
+    font-size: medium;
+    border-radius: 20px;
+}
+
+details > summary {
+    display: flex;
+    font-weight: 900;
+    padding: 40px;
+    cursor: pointer;
+    justify-self: center;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.animated {
+    width: 50%;
+    max-height: 400px;
+}
+
+.button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #4187f2;
+    color: whitesmoke;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.inputGroup {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 1em 0 1em 0;
+    width: 290px;
+    position: relative;
+  }
+  
+  .inputGroup input {
+    font-size: 100%;
+    padding: 0.8em;
+    outline: none;
+    border: 2px solid rgb(200, 200, 200);
+    background-color: white;
+    border-radius: 20px;
+    width: 100%;
+  }
+  
+  .inputGroup label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: rgb(100, 100, 100);
+  }
+  
+  .inputGroup :is(input:focus, input:valid)~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: #e8e8e8;
+    border-radius: 10px;
+  }
+  
+  .inputGroup :is(input:focus, input:valid) {
+    border-color: rgb(150, 150, 200);
+  }
+
+.price-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 50px 100px;
+    justify-content: space-between;
+}
+
+.price-card {
+    box-shadow: 10px 10px 55px #9abcee;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+    width: 25%;
+}
+
+.price-circle {
+    border: 1px solid #4187f2;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    background-color: rgba(181, 180, 180, 0.253);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.price-card > span {
+    font-size: large;
+    font-weight: bold;
+}
+
+.price-card  button {
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #4187f2;
+    color: whitesmoke;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.pricing {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0px;
+}
+
+.price-title {
+    font-size: 30px;
+    font-weight: 900;
+    align-self: center;
+    padding: 20px;
+    color: rgb(49, 48, 48);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    background-color: rgba(231, 231, 231, 0.773);
+    border-top: 2px solid silver;
+}
+
+.sitemap {
+    display: flex;
+    width: 90%;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+
+}
+
+#emp-confirmation {
+    font-size: larger;
+    font-weight: 600;
+}
+
+#vehicle-confirmation {
+    font-size: larger;
+    font-weight: 600;
+}
