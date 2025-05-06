@@ -240,11 +240,11 @@ details > summary {
     font-weight: bold;
 }
 
-.price-card  button {
+.price-card  .btn {
     font-size: large;
     padding: 5px;
     border-radius: 5px;
-    background-color: #4187f2;
+    /* background-color: #4187f2; */
     color: whitesmoke;
     padding: 10px;
     margin-top: 30px;

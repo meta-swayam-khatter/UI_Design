@@ -92,15 +92,16 @@ vehicleEnt.forEach(e => (
     })
 ))
 
-let cyclePurchaseButton = document.querySelectorAll("#cycle-pricing")
-let twoWheelerPurchaseButton = document.querySelectorAll("#two-wheeler-pricing")
-let fourWheelerPurchaseButton = document.querySelectorAll("#four-wheeler-pricing")
-let priceContainer = document.querySelectorAll("#price-container")
+const cyclePurchaseButton = document.querySelector("#cycle-pricing");
+const twoWheelerPurchaseButton = document.querySelector("#two-wheeler-pricing");
+const fourWheelerPurchaseButton = document.querySelector("#four-wheeler-pricing");
 
-if(localStorage.getItem("vehicle-type") == "four-wheeler") {
-    fourWheelerPurchaseButton.classList.remove("d-none")
-} else if(localStorage.getItem("vehicle-type") == "two-wheeler") {
-    twoWheelerPurchaseButton.classList.remove("d-none")
-} else if(localStorage.getItem("vehicle-type") == "cycle") {
-    cyclePurchaseButton.classList.remove("d-none")
-}
+(function () {
+    const vehicleType = localStorage.getItem("vehicle-type");
+
+    if (vehicleType) {
+        document.querySelector(`#${vehicleType}-pricing`)?.removeAttribute("disabled");
+    }
+
+    console.log("Vehicle type checked:", vehicleType);
+})();
