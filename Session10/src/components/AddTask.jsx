@@ -61,7 +61,7 @@ const FormSchema = z.object({
     }),
 })
 
-export function Addnote() {
+export function AddTask() {
     const form = useForm({
         resolver: zodResolver(FormSchema),
         defaultValues: {
@@ -242,9 +242,9 @@ export function Addnote() {
                                                             </SelectTrigger>
                                                         </FormControl>
                                                         <SelectContent>
-                                                            <SelectItem value="high">High</SelectItem>
-                                                            <SelectItem value="medium">Medium</SelectItem>
-                                                            <SelectItem value="low">Low</SelectItem>
+                                                            <SelectItem value="1">High</SelectItem>
+                                                            <SelectItem value="2">Medium</SelectItem>
+                                                            <SelectItem value="3">Low</SelectItem>
                                                         </SelectContent>
                                                     </Select>
                                                 </FormItem>
@@ -264,13 +264,6 @@ export function Addnote() {
                         </Form>
                     </DialogDescription>
                 </DialogHeader>
-                {/* <DialogFooter className="sm:justify-start">
-                    <DialogClose asChild>
-                        <Button type="button" variant="secondary">
-                            Close
-                        </Button>
-                    </DialogClose>
-                </DialogFooter> */}
             </DialogContent>
         </Dialog >
     )
