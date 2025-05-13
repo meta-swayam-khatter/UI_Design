@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form"
 import { format } from "date-fns"
 import { z } from "zod"
 import { CalendarIcon } from "lucide-react"
-import { toast } from "sonner"
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import {
@@ -34,7 +33,6 @@ import {
 } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
 import { Calendar } from "@/components/ui/calendar"
 import {
     Popover,
@@ -56,7 +54,7 @@ const FormSchema = z.object({
     status: z.enum(["new", "in-progress", "completed"], {
         required_error: "You need to select a status.",
     }),
-    priority: z.enum(["high", "medium", "low"], {
+    priority: z.enum(["1", "2", "3"], {
         required_error: "You need to select a priority.",
     }),
 })
@@ -70,25 +68,19 @@ export function AddTask() {
             creationDate: new window.Date(),
             completionDate: "",
             status: "new",
-            priority: "low"
+            priority: "3"
         },
     })
 
     function onSubmit(data) {
         console.log(data)
-        toast({
-            title: "You submitted the following values:",
-            description: (
-                <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-                    <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-                </pre>
-            ),
-        })
     }
 
     return (
         <Dialog>
-            <Button variant={"outline"} className="px-6 border-blue-400"><DialogTrigger>New Task</DialogTrigger></Button>
+            <DialogTrigger>
+                <div className="px-6 py-2 rounded-lg border-2 border-blue-400">New Task</div>
+            </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
                     <DialogTitle>Add Task Details</DialogTitle>
@@ -215,7 +207,7 @@ export function AddTask() {
                                                     <Select onValueChange={field.onChange} defaultValue={field.value}>
                                                         <FormControl>
                                                             <SelectTrigger>
-                                                                <SelectValue placeholder="Select a priority" />
+                                                                <SelectValue placeholder="Select a status" />
                                                             </SelectTrigger>
                                                         </FormControl>
                                                         <SelectContent>
@@ -253,12 +245,12 @@ export function AddTask() {
                                     </div>
                                 </div>
                                 <div className="flex justify-around">
-                                <Button type="submit">Submit</Button>
-                                <DialogClose asChild>
-                                    <Button type="button" variant="secondary">
-                                        Close
-                                    </Button>
-                                </DialogClose>
+                                    <Button type="submit">Submit</Button>
+                                    <DialogClose asChild>
+                                        <Button type="button" variant="secondary">
+                                            Close
+                                        </Button>
+                                    </DialogClose>
                                 </div>
                             </form>
                         </Form>

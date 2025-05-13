@@ -1,19 +1,19 @@
-import { useState } from 'react'
 import './App.css'
 
 import Navbar from './components/Navbar'
 import Tasks from './components/Tasks'
+import { TaskProvider } from './context/TaskContext'
 
 
 
 function App() {
 
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Navbar />
-      <Tasks />
+      <TaskProvider>
+        <Navbar />
+        <Tasks />
+      </TaskProvider>
     </>
   )
 }

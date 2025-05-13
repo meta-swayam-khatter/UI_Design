@@ -244,3 +244,4 @@ const yenBtn = document.getElementById("yen-btn");
 if(yenBtn!==null){
     yenBtn.addEventListener("click", displayPriceInYen)
 }
+
