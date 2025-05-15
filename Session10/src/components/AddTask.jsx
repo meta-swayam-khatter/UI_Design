@@ -2,7 +2,7 @@
 
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
-import { format } from "date-fns"
+import { format, formatDate } from "date-fns"
 import { z } from "zod"
 import { CalendarIcon } from "lucide-react"
 import { cn } from "@/lib/utils"
@@ -39,6 +39,8 @@ import {
     PopoverContent,
     PopoverTrigger,
 } from "@/components/ui/popover"
+import { useContext, useState } from "react"
+import { TaskContext } from "@/context/TaskContext"
 
 
 const FormSchema = z.object({
@@ -60,12 +62,15 @@ const FormSchema = z.object({
 })
 
 export function AddTask() {
+    const { tasks, setTasks, count, setCount } = useContext(TaskContext);
+    const [modalOpen, setModalOpen] = useState(false);
+
     const form = useForm({
         resolver: zodResolver(FormSchema),
         defaultValues: {
             title: "",
             description: "",
-            creationDate: new window.Date(),
+            creationDate: new Date(),
             completionDate: "",
             status: "new",
             priority: "3"
@@ -73,13 +78,26 @@ export function AddTask() {
     })
 
     function onSubmit(data) {
-        console.log(data)
+        const task = {
+            "id": count+1,
+            "title": data.title?data.title:"",
+            "description": data.description?data.description:"",
+            "priority" : data.priority?data.priority:"",
+            "status": data.status?data.status:"",
+            "creationDate": data.creationDate?new Date().toLocaleDateString():"",
+            "completionDate": data.completionDate?data.completionDate:""
+        };
+        console.log("on submit: ", task)
+        setTasks([...tasks, task]);
+        setCount(count+1);
+        setModalOpen(false);
+        form.reset();
     }
 
     return (
-        <Dialog>
+        <Dialog open={modalOpen} onOpenChange={setModalOpen}>
             <DialogTrigger>
-                <div className="px-6 py-2 rounded-lg border-2 border-blue-400">New Task</div>
+                <Button className="px-6 py-2 rounded-lg border-2 border-blue-400">New Task</Button>
             </DialogTrigger>
             <DialogContent>
                 <DialogHeader>
